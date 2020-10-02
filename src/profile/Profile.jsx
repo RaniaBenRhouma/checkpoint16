@@ -1,14 +1,16 @@
     import React from 'react';
     import PropTypes from "prop-types";
+    import '../App.css';
+
 
     export const Profile = props => {
     /*inline style*/
-    const styleObject = {border : "solid 1px black" , marginLeft : "100" , marginTop : "100", textAlign:"center"}
+    const styleObject = {border : "solid 1px black" , textAlign:"center"}
     const childrenn = props.children ;
     
     return (
-    <div width="20%" style={styleObject}>
-    <img src={childrenn} alt= " profilImg " />
+    <div className ="returnedCode" style={styleObject}>
+    <img src={childrenn} alt= " profilImg " width="200" />
     <h2>{props.fullName}</h2>
     <p>{props.bio}</p>
     <h4>{props.profession}</h4>

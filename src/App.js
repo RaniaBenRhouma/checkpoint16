@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import {Profile} from "./profile/Profile"
 function App() {
   const handleeName = name => alert (name);
